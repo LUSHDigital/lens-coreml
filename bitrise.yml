@@ -1,0 +1,15 @@
+format_version: 5
+
+workflows:
+  test:
+    steps:
+    - script:
+        title: Hello Bitrise!
+        inputs:
+        - content: |-
+            #!/bin/bash
+            echo "Welcome to Bitrise!"
+            echo "Such Test!"
+            echo
+            echo "Project Title is: ${BITRISE_APP_TITLE}"
+            echo "and the primary development branch is: ${BITRISE_DEV_BRANCH}"
